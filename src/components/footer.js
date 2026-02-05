@@ -170,7 +170,7 @@ const Footer = (props) => {
                       </g>
                     </svg>
                   </div>
-                  <a href="mailto:info@luxkachel.cz?subject=">
+                  <a href="mailto:voflidr@gmail.com?subject=">
                     <div className="footer-contact-link">
                       <span>
                         <span>{/*locale-text_IKPNTG*/}</span>
