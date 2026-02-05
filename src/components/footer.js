@@ -1,4 +1,5 @@
 import React from 'react'
+import { t } from '../i18n'
 
 import Script from 'dangerous-html/react'
 
@@ -11,12 +12,12 @@ const Footer = (props) => {
         <div className="footer-container">
           <div className="footer-grid">
             <div className="footer-column footer-brand-col">
-              <h2 className="footer-logo">
-                <span>{/*locale-FooterLogo_eSHuli*/}</span>
-              </h2>
+              <h2 className="footer-logo">{t('FooterLogo_eSHuli')}</h2>
+
               <p className="footer-description section-content">
-                <span>{/*locale-SectionContent_A532db*/}</span>
+                {t('SectionContent_A532db')}
               </p>
+
               <div className="footer-social-links">
                 <a
                   href="https://www.facebook.com/BullmateTiling/"
@@ -44,6 +45,7 @@ const Footer = (props) => {
                     </svg>
                   </div>
                 </a>
+
                 <a
                   href="https://www.instagram.com/bullmate_tiling/"
                   target="_blank"
@@ -66,14 +68,7 @@ const Footer = (props) => {
                         strokeLinejoin="round"
                         strokeWidth="2"
                       >
-                        <rect
-                          width="20"
-                          height="20"
-                          x="2"
-                          y="2"
-                          rx="5"
-                          ry="5"
-                        ></rect>
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                         <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
                       </g>
                     </svg>
@@ -81,48 +76,43 @@ const Footer = (props) => {
                 </a>
               </div>
             </div>
+
             <div className="footer-column footer-nav-col">
               <h3 className="footer-title section-subtitle">
-                <span>{/*locale-SectionSubtitle_ogQTW_*/}</span>
+                {t('SectionSubtitle_ogQTW_')}
               </h3>
+
               <nav className="footer-nav">
                 <ul className="footer-nav-list">
                   <li className="footer-nav-item">
-                    <a href="/">
-                      <div className="footer-nav-link">
-                        <span>
-                          <span>{/*locale-text_UGFCC1*/}</span>
-                        </span>
-                      </div>
+                    <a href="#/">
+                      <div className="footer-nav-link">{t('text_UGFCC1')}</div>
                     </a>
                   </li>
+
                   <li className="footer-nav-item">
-                    <a href="#">
-                      <div className="footer-nav-link">
-                        <span>
-                          <span>{/*locale-text_bSNphh*/}</span>
-                        </span>
-                      </div>
+                    <a href="#/">
+                      <div className="footer-nav-link">{t('text_bSNphh')}</div>
                     </a>
                   </li>
+
                   <li className="footer-nav-item">
-                    <a href="#">
-                      <div className="footer-nav-link">
-                        <span>
-                          <span>{/*locale-text_57w_6M*/}</span>
-                        </span>
-                      </div>
+                    <a href="#/">
+                      <div className="footer-nav-link">{t('text_57w_6M')}</div>
                     </a>
                   </li>
+
                   <li className="footer-nav-item"></li>
                   <li className="footer-nav-item"></li>
                 </ul>
               </nav>
             </div>
+
             <div className="footer-column footer-contact-col">
               <h3 className="footer-title section-subtitle">
-                <span>{/*locale-SectionSubtitle_c-Etza*/}</span>
+                {t('SectionSubtitle_c-Etza')}
               </h3>
+
               <div className="footer-contact-info">
                 <div className="footer-contact-item">
                   <div className="footer-icon-box">
@@ -142,14 +132,12 @@ const Footer = (props) => {
                       ></path>
                     </svg>
                   </div>
+
                   <a href="tel:+420777123456">
-                    <div className="footer-contact-link">
-                      <span>
-                        <span>{/*locale-text_QKcie3*/}</span>
-                      </span>
-                    </div>
+                    <div className="footer-contact-link">{t('text_QKcie3')}</div>
                   </a>
                 </div>
+
                 <div className="footer-contact-item">
                   <div className="footer-icon-box">
                     <svg
@@ -170,14 +158,12 @@ const Footer = (props) => {
                       </g>
                     </svg>
                   </div>
+
                   <a href="mailto:voflidr@gmail.com?subject=">
-                    <div className="footer-contact-link">
-                      <span>
-                        <span>{/*locale-text_IKPNTG*/}</span>
-                      </span>
-                    </div>
+                    <div className="footer-contact-link">{t('text_IKPNTG')}</div>
                   </a>
                 </div>
+
                 <div className="footer-contact-item">
                   <div className="footer-icon-box">
                     <svg
@@ -198,30 +184,32 @@ const Footer = (props) => {
                       </g>
                     </svg>
                   </div>
+
                   <span className="footer-contact-text">
-                    <span>{/*locale-FooterContactText_xlE8-V*/}</span>
+                    {t('FooterContactText_xlE8-V')}
                   </span>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="footer-bottom">
             <div className="footer-copyright">
-              <span className="section-content">
-                <span>{/*locale-SectionContent_zQ7V9T*/}</span>
-              </span>
+              <span className="section-content">{t('SectionContent_zQ7V9T')}</span>
             </div>
+
             <div className="footer-legal-links">
-              <a href="#">
+              <a href="#/">
                 <div className="footer-thq-footer-legal-link-elm1 footer-legal-link"></div>
               </a>
-              <a href="#">
+              <a href="#/">
                 <div className="footer-thq-footer-legal-link-elm2 footer-legal-link"></div>
               </a>
             </div>
           </div>
         </div>
       </footer>
+
       <div className="footer-container2">
         <div className="footer-container3">
           <Script
