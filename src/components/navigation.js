@@ -1,4 +1,5 @@
 import React from 'react'
+import { t } from '../i18n'
 
 import Script from 'dangerous-html/react'
 
@@ -9,64 +10,52 @@ const Navigation = (props) => {
     <div className="navigation-container1">
       <nav className="navigation-root">
         <div className="navigation-container">
-          <a href="/">
+          {/* GitHub Pages + HashRouter: always go home via "#/" */}
+          <a href="#/">
             <div aria-label="LuxKachel Domů" className="navigation-logo-link">
               <span className="navigation-brand section-title">
-                <span>{/*locale-SectionTitle_vNMad_*/}</span>
+                {t('SectionTitle_vNMad_')}
               </span>
             </div>
           </a>
+
           <div className="navigation-desktop-menu">
             <ul className="navigation-link-list">
               <li className="navigation-link-item"></li>
+
               <li className="navigation-link-item">
                 <a href="#/">
-                  <div className="navigation-link">
-                    <span>
-                      <span>{/*locale-text_IJc7bV*/}</span>
-                    </span>
-                  </div>
+                  <div className="navigation-link">{t('text_IJc7bV')}</div>
                 </a>
               </li>
+
               <li className="navigation-link-item">
                 <a href="#/">
-                  <div className="navigation-link">
-                    <span>
-                      <span>{/*locale-text_0mNocu*/}</span>
-                    </span>
-                  </div>
+                  <div className="navigation-link">{t('text_0mNocu')}</div>
                 </a>
               </li>
+
               <li className="navigation-link-item">
                 <a href="#/">
-                  <div className="navigation-link">
-                    <span>
-                      <span>{/*locale-text_L9kXzU*/}</span>
-                    </span>
-                  </div>
+                  <div className="navigation-link">{t('text_L9kXzU')}</div>
                 </a>
               </li>
             </ul>
-            <a href="/kontakt">
+
+            <a href="#/">
               <div className="navigation-cta btn btn-primary">
-                <span>
-                  <span>{/*locale-text_H-tblt*/}</span>
-                </span>
+                {t('text_H-tblt')}
               </div>
             </a>
           </div>
+
           <button
             id="navToggle"
             aria-label="Otevřít menu"
             aria-expanded="false"
             className="navigation-mobile-toggle"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 fill="none"
                 stroke="currentColor"
@@ -79,26 +68,23 @@ const Navigation = (props) => {
           </button>
         </div>
       </nav>
+
       <div id="mobileOverlay" className="navigation-mobile-overlay">
         <div className="navigation-overlay-header">
-          <a href="/">
+          <a href="#/">
             <div aria-label="LuxKachel Domů" className="navigation-logo-link">
               <span className="navigation-brand section-title">
-                <span>{/*locale-SectionTitle_jSZkTr*/}</span>
+                {t('SectionTitle_jSZkTr')}
               </span>
             </div>
           </a>
+
           <button
             id="navClose"
             aria-label="Zavřít menu"
             className="navigation-mobile-close"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <g
                 fill="none"
                 stroke="currentColor"
@@ -112,64 +98,49 @@ const Navigation = (props) => {
             </svg>
           </button>
         </div>
+
         <div className="navigation-overlay-content">
           <ul className="navigation-mobile-links">
             <li className="navigation-mobile-item">
-              <a href="/">
-                <div className="navigation-mobile-link">
-                  <span>
-                    <span>{/*locale-text_PV4Cmf*/}</span>
-                  </span>
-                </div>
+              <a href="#/">
+                <div className="navigation-mobile-link">{t('text_PV4Cmf')}</div>
               </a>
             </li>
+
             <li className="navigation-mobile-item">
-              <a href="/projekty">
-                <div className="navigation-mobile-link">
-                  <span>
-                    <span>{/*locale-text_GNwC3L*/}</span>
-                  </span>
-                </div>
+              <a href="#/">
+                <div className="navigation-mobile-link">{t('text_GNwC3L')}</div>
               </a>
             </li>
+
             <li className="navigation-mobile-item">
-              <a href="/sluzby">
-                <div className="navigation-mobile-link">
-                  <span>
-                    <span>{/*locale-text_tMy8ha*/}</span>
-                  </span>
-                </div>
+              <a href="#/">
+                <div className="navigation-mobile-link">{t('text_tMy8ha')}</div>
               </a>
             </li>
+
             <li className="navigation-mobile-item">
-              <a href="/o-nas">
-                <div className="navigation-mobile-link">
-                  <span>
-                    <span>{/*locale-text_aIsSus*/}</span>
-                  </span>
-                </div>
+              <a href="#/">
+                <div className="navigation-mobile-link">{t('text_aIsSus')}</div>
               </a>
             </li>
           </ul>
+
           <div className="navigation-overlay-footer">
-            <a href="/kontakt">
+            <a href="#/">
               <div className="navigation-mobile-cta btn btn-primary btn-lg">
-                <span>
-                  <span>{/*locale-text_-DwLla*/}</span>
-                </span>
+                {t('text_-DwLla')}
               </div>
             </a>
+
             <div className="navigation-contact-info">
-              <p className="section-content">
-                <span>{/*locale-SectionContent_9B1pho*/}</span>
-              </p>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_fCqSC2*/}</span>
-              </p>
+              <p className="section-content">{t('SectionContent_9B1pho')}</p>
+              <p className="section-content">{t('SectionContent_fCqSC2')}</p>
             </div>
           </div>
         </div>
       </div>
+
       <div className="navigation-container2">
         <div className="navigation-container3">
           <Script
