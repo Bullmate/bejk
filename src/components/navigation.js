@@ -20,7 +20,7 @@ const Navigation = (props) => {
             <ul className="navigation-link-list">
               <li className="navigation-link-item"></li>
               <li className="navigation-link-item">
-                <a href="/projekty">
+                <a href="#/">
                   <div className="navigation-link">
                     <span>
                       <span>{/*locale-text_IJc7bV*/}</span>
@@ -29,7 +29,7 @@ const Navigation = (props) => {
                 </a>
               </li>
               <li className="navigation-link-item">
-                <a href="/sluzby">
+                <a href="#/">
                   <div className="navigation-link">
                     <span>
                       <span>{/*locale-text_0mNocu*/}</span>
@@ -38,7 +38,7 @@ const Navigation = (props) => {
                 </a>
               </li>
               <li className="navigation-link-item">
-                <a href="/o-nas">
+                <a href="#/">
                   <div className="navigation-link">
                     <span>
                       <span>{/*locale-text_L9kXzU*/}</span>
