@@ -1,4 +1,5 @@
 import React from 'react'
+import { t } from '../i18n'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -18,25 +19,26 @@ const Home = (props) => {
           href="https://extroverted-muted-ape-6c7xzq.teleporthq.app/"
         />
       </Helmet>
+
       <Navigation locale={props?.locale ?? ''}></Navigation>
+
       <section className="hero-luxury-cladding">
         <div className="hero-outer-wrapper">
           <div className="hero-content-region hero-text-region">
             <div className="hero-text-inner">
-              <h1 className="home-hero-title hero-title">
-                <span>{/*locale-HeroTitle_9cUwoM*/}</span>
-              </h1>
+              <h1 className="home-hero-title hero-title">{t('HeroTitle_9cUwoM')}</h1>
+
               <p className="home-hero-subtitle hero-subtitle">
-                <span>{/*locale-HeroSubtitle_a29AFy*/}</span>
+                {t('HeroSubtitle_a29AFy')}
               </p>
+
               <div className="hero-cta-group">
                 <a href="#quote">
                   <div className="home-btn-lg btn btn-primary btn-lg">
-                    <span>
-                      <span>{/*locale-text_wn6V8q*/}</span>
-                    </span>
+                    {t('text_wn6V8q')}
                   </div>
                 </a>
+
                 <div className="hero-badge">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,13 +54,12 @@ const Home = (props) => {
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"></path>
                     <circle cx="9" cy="7" r="4"></circle>
                   </svg>
-                  <span>
-                    <span>{/*locale-text_Pa2a9m*/}</span>
-                  </span>
+                  <span>{t('text_Pa2a9m')}</span>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="hero-content-region hero-image-region">
             <img
               src="https://iili.io/fb9Ac12.png"
@@ -69,16 +70,15 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+
       <section className="home-thq-team-section-elm team-section">
         <div className="team-container">
           <div className="team-grid">
             <div className="team-content">
-              <h2 className="section-title">
-                <span>{/*locale-SectionTitle_nQabRo*/}</span>
-              </h2>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_SRvlBp*/}</span>
-              </p>
+              <h2 className="section-title">{t('SectionTitle_nQabRo')}</h2>
+
+              <p className="section-content">{t('SectionContent_SRvlBp')}</p>
+
               <ul className="team-benefits">
                 <li className="team-benefit-item">
                   <div className="team-icon-wrapper">
@@ -98,9 +98,10 @@ const Home = (props) => {
                     </svg>
                   </div>
                   <span className="section-content">
-                    <span>{/*locale-SectionContent_0pf0fA*/}</span>
+                    {t('SectionContent_0pf0fA')}
                   </span>
                 </li>
+
                 <li className="team-benefit-item">
                   <div className="team-icon-wrapper">
                     <svg
@@ -119,11 +120,12 @@ const Home = (props) => {
                     </svg>
                   </div>
                   <span className="section-content">
-                    <span>{/*locale-SectionContent_Fax1Qn*/}</span>
+                    {t('SectionContent_Fax1Qn')}
                   </span>
                 </li>
               </ul>
             </div>
+
             <div className="team-visual">
               <div className="team-image-frame">
                 <img
@@ -137,12 +139,12 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+
       <section className="portfolio-preview">
         <div className="portfolio-header">
-          <h2 className="section-title">
-            <span>{/*locale-SectionTitle_kTcQ9V*/}</span>
-          </h2>
+          <h2 className="section-title">{t('SectionTitle_kTcQ9V')}</h2>
         </div>
+
         <div className="portfolio-grid">
           <div className="portfolio-item">
             <img
@@ -151,14 +153,11 @@ const Home = (props) => {
               className="home-thq-portfolio-img-elm1 portfolio-img"
             />
             <div className="portfolio-overlay">
-              <h3 className="section-subtitle">
-                <span>{/*locale-SectionSubtitle_PeQxcH*/}</span>
-              </h3>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_UMMAdj*/}</span>
-              </p>
+              <h3 className="section-subtitle">{t('SectionSubtitle_PeQxcH')}</h3>
+              <p className="section-content">{t('SectionContent_UMMAdj')}</p>
             </div>
           </div>
+
           <div className="portfolio-item">
             <img
               src="https://iili.io/fDyZjzQ.jpg"
@@ -166,14 +165,11 @@ const Home = (props) => {
               className="portfolio-img"
             />
             <div className="portfolio-overlay">
-              <h3 className="section-subtitle">
-                <span>{/*locale-SectionSubtitle_MUcUdX*/}</span>
-              </h3>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_WJ1pI9*/}</span>
-              </p>
+              <h3 className="section-subtitle">{t('SectionSubtitle_MUcUdX')}</h3>
+              <p className="section-content">{t('SectionContent_WJ1pI9')}</p>
             </div>
           </div>
+
           <div className="portfolio-item">
             <img
               src="https://iili.io/fDyZEge.jpg"
@@ -181,14 +177,11 @@ const Home = (props) => {
               className="portfolio-img"
             />
             <div className="portfolio-overlay">
-              <h3 className="section-subtitle">
-                <span>{/*locale-SectionSubtitle_ddJ5an*/}</span>
-              </h3>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_DPvw6o*/}</span>
-              </p>
+              <h3 className="section-subtitle">{t('SectionSubtitle_ddJ5an')}</h3>
+              <p className="section-content">{t('SectionContent_DPvw6o')}</p>
             </div>
           </div>
+
           <div className="portfolio-item">
             <img
               src="https://iili.io/fDyZcsS.jpg"
@@ -196,14 +189,11 @@ const Home = (props) => {
               className="home-thq-portfolio-img-elm4 portfolio-img"
             />
             <div className="portfolio-overlay">
-              <h3 className="section-subtitle">
-                <span>{/*locale-SectionSubtitle_dHsnXX*/}</span>
-              </h3>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_l-Xscz*/}</span>
-              </p>
+              <h3 className="section-subtitle">{t('SectionSubtitle_dHsnXX')}</h3>
+              <p className="section-content">{t('SectionContent_l-Xscz')}</p>
             </div>
           </div>
+
           <div className="portfolio-item">
             <img
               src="https://iili.io/fDyZZrX.jpg"
@@ -211,14 +201,11 @@ const Home = (props) => {
               className="portfolio-img"
             />
             <div className="portfolio-overlay">
-              <h3 className="section-subtitle">
-                <span>{/*locale-SectionSubtitle_oos6YZ*/}</span>
-              </h3>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_VuWUC0*/}</span>
-              </p>
+              <h3 className="section-subtitle">{t('SectionSubtitle_oos6YZ')}</h3>
+              <p className="section-content">{t('SectionContent_VuWUC0')}</p>
             </div>
           </div>
+
           <div className="portfolio-item">
             <img
               src="https://iili.io/fDytJQ2.jpg"
@@ -226,17 +213,15 @@ const Home = (props) => {
               className="portfolio-img"
             />
             <div className="portfolio-overlay">
-              <h3 className="section-subtitle">
-                <span>{/*locale-SectionSubtitle_9mRYRc*/}</span>
-              </h3>
-              <p className="section-content">
-                <span>{/*locale-SectionContent_ivEKMr*/}</span>
-              </p>
+              <h3 className="section-subtitle">{t('SectionSubtitle_9mRYRc')}</h3>
+              <p className="section-content">{t('SectionContent_ivEKMr')}</p>
             </div>
           </div>
         </div>
+
         <div className="home-thq-portfolio-footer-elm portfolio-footer"></div>
       </section>
+
       <section id="quote" className="quote-cta">
         <div className="quote-spotlight-wrapper">
           <div className="quote-background-image">
@@ -247,10 +232,10 @@ const Home = (props) => {
             />
             <div className="quote-scrim"></div>
           </div>
+
           <div className="quote-focus-card">
-            <h2 className="section-title">
-              <span>{/*locale-SectionTitle_Rmuv5H*/}</span>
-            </h2>
+            <h2 className="section-title">{t('SectionTitle_Rmuv5H')}</h2>
+
             <div className="quote-actions">
               <div className="home-thq-btn-elm2 btn btn-accent btn-xl">
                 <svg
@@ -267,14 +252,13 @@ const Home = (props) => {
                   <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                 </svg>
-                <span className="home-text3">
-                  <span>{/*locale-text_SM5GZn*/}</span>
-                </span>
+                <span className="home-text3">{t('text_SM5GZn')}</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <div className="home-container2">
         <div className="home-container3">
           <Script
@@ -287,6 +271,7 @@ section {
           ></Script>
         </div>
       </div>
+
       <div className="home-container4">
         <div className="home-container5">
           <Script
@@ -329,7 +314,9 @@ section {
           ></Script>
         </div>
       </div>
+
       <Footer locale={props?.locale ?? ''}></Footer>
+
       <a href="https://play.teleporthq.io/signup">
         <div aria-label="Sign up to TeleportHQ" className="home-container6">
           <svg
