@@ -33,11 +33,11 @@ const Home = (props) => {
               </p>
 
               <div className="hero-cta-group">
-                <a href="#quote">
-                  <div className="home-btn-lg btn btn-primary btn-lg">
-                    {t('text_wn6V8q')}
-                  </div>
-                </a>
+                <a href="#/quote">
+  <div className="home-btn-lg btn btn-primary btn-lg">
+    <span>{t('text_wn6V8q')}</span>
+  </div>
+</a>
 
                 <div className="hero-badge">
                   <svg
