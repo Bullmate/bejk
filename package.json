@@ -1,7 +1,8 @@
 {
-  "name": "extroverted-muted-ape",
+  "name": "bullmate tiling",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://bullmate.github.io/bejk",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "react": "^17.0.2",
