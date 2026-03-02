@@ -5,19 +5,17 @@ import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import Navigation from '../components/navigation'
+import Modal from '../components/modal'
 import Footer from '../components/footer'
 import './home.css'
 
 const Home = (props) => {
   return (
     <div className="home-container1">
+      <Modal />
       <Helmet>
-        <title>Extroverted Muted Ape</title>
-        <meta property="og:title" content="Extroverted Muted Ape" />
-        <link
-          rel="canonical"
-          href="https://extroverted-muted-ape-6c7xzq.teleporthq.app/"
-        />
+        <title>Bullmate Tiling</title>
+        <meta property="og:title" content="Bullmate Tiling" />
       </Helmet>
 
       <Navigation locale={props?.locale ?? ''}></Navigation>
@@ -75,7 +73,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className="home-thq-team-section-elm team-section">
+      <section id="about" className="home-thq-team-section-elm team-section">
         <div className="team-container">
           <div className="team-grid">
             <div className="team-content">
@@ -144,7 +142,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className="portfolio-preview">
+      <section id="portfolio" className="portfolio-preview">
         <div className="portfolio-header">
           <h2 className="section-title">{t('SectionTitle_kTcQ9V')}</h2>
         </div>
@@ -241,7 +239,10 @@ const Home = (props) => {
             <h2 className="section-title">{t('SectionTitle_Rmuv5H')}</h2>
 
             <div className="quote-actions">
-              <div className="home-thq-btn-elm2 btn btn-accent btn-xl">
+              <a
+                href="mailto:voflidr@gmail.com"
+                className="home-thq-btn-elm2 btn btn-accent btn-xl"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -256,8 +257,8 @@ const Home = (props) => {
                   <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                 </svg>
-                <span className="home-text3">{t('text_SM5GZn')}</span>
-              </div>
+                <span className="home-text3">voflidr@gmail.com</span>
+              </a>
             </div>
           </div>
         </div>

@@ -24,25 +24,25 @@ const Navigation = (props) => {
               <li className="navigation-link-item"></li>
 
               <li className="navigation-link-item">
-                <a href="#/">
+                <a href="#/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
                   <div className="navigation-link">{t('text_IJc7bV')}</div>
                 </a>
               </li>
 
               <li className="navigation-link-item">
-                <a href="#/">
+                <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }) }}>
                   <div className="navigation-link">{t('text_0mNocu')}</div>
                 </a>
               </li>
 
               <li className="navigation-link-item">
-                <a href="#/">
+                <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }) }}>
                   <div className="navigation-link">{t('text_L9kXzU')}</div>
                 </a>
               </li>
             </ul>
 
-            <a href="#/">
+            <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth' }) }}>
               <div className="navigation-cta btn btn-primary">
                 {t('text_H-tblt')}
               </div>
@@ -108,7 +108,7 @@ const Navigation = (props) => {
             </li>
 
             <li className="navigation-mobile-item">
-              <a href="#/">
+              <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }) }}>
                 <div className="navigation-mobile-link">{t('text_GNwC3L')}</div>
               </a>
             </li>
@@ -120,14 +120,14 @@ const Navigation = (props) => {
             </li>
 
             <li className="navigation-mobile-item">
-              <a href="#/">
+              <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }) }}>
                 <div className="navigation-mobile-link">{t('text_aIsSus')}</div>
               </a>
             </li>
           </ul>
 
           <div className="navigation-overlay-footer">
-            <a href="#/">
+            <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('quote')?.scrollIntoView({ behavior: 'smooth' }) }}>
               <div className="navigation-mobile-cta btn btn-primary btn-lg">
                 {t('text_-DwLla')}
               </div>
