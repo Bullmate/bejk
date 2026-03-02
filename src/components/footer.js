@@ -85,19 +85,19 @@ const Footer = (props) => {
               <nav className="footer-nav">
                 <ul className="footer-nav-list">
                   <li className="footer-nav-item">
-                    <a href="#/">
+                    <a href="#/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
                       <div className="footer-nav-link">{t('text_UGFCC1')}</div>
                     </a>
                   </li>
 
                   <li className="footer-nav-item">
-                    <a href="#/">
+                    <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }) }}>
                       <div className="footer-nav-link">{t('text_bSNphh')}</div>
                     </a>
                   </li>
 
                   <li className="footer-nav-item">
-                    <a href="#/">
+                    <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }) }}>
                       <div className="footer-nav-link">{t('text_57w_6M')}</div>
                     </a>
                   </li>
@@ -133,7 +133,7 @@ const Footer = (props) => {
                     </svg>
                   </div>
 
-                  <a href="tel:+420777123456">
+                  <a href="tel:+420601351515">
                     <div className="footer-contact-link">{t('text_QKcie3')}</div>
                   </a>
                 </div>
@@ -224,8 +224,6 @@ const Footer = (props) => {
     })
   })
 
-  // Simple console log to confirm footer load without breaking constraints
-  console.log("LuxKachel Footer Initialized")
 })()
 </script>`}
           ></Script>
