@@ -16,16 +16,12 @@
   transform: translateY(-8px) scaleX(1.05) scaleY(1.05) scaleZ(1.05);
 }
  
-.home-thq-portfolio-img-elm4 {
-  transform: translateX(-75px) translateY(75px) scaleX(1.4) scaleY(1.4) scaleZ(1.4);
-}
- 
 .home-thq-portfolio-footer-elm {
   border: 2px dashed rgba(120, 120, 120, 0.4);
 }
  
 .home-thq-btn-elm2 {
-  width: 248px;
+  min-width: 248px;
 }
  
 .home-text3 {

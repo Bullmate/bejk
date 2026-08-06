@@ -134,7 +134,7 @@ const Home = (props) => {
             <div className="team-visual">
               <div className="team-image-frame">
                 <img
-                  src="https://iili.io/fb91Xh7.jpg"
+                  src="https://iili.io/CrKXo4R.jpg"
                   alt="Tým při práci na luxusním obkladu"
                   className="team-work-image"
                 />
@@ -221,6 +221,138 @@ const Home = (props) => {
               <p className="section-content">{t('SectionContent_ivEKMr')}</p>
             </div>
           </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/CrfcADx.jpg"
+              alt="Gold Coast bazen Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_gold_coast_1_title')}</h3>
+              <p className="section-content">{t('portfolio_gold_coast_1_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/Crfc5oQ.jpg"
+              alt="Gold Coast bazen Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_gold_coast_2_title')}</h3>
+              <p className="section-content">{t('portfolio_gold_coast_2_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/CrfcuNj.jpg"
+              alt="Gold Coast bazen Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_gold_coast_3_title')}</h3>
+              <p className="section-content">{t('portfolio_gold_coast_3_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/Crfc7VV.jpg"
+              alt="Gold Coast bazen Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_gold_coast_4_title')}</h3>
+              <p className="section-content">{t('portfolio_gold_coast_4_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/CrfcNfI.jpg"
+              alt="Nerang bazenovy lem Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_nerang_title')}</h3>
+              <p className="section-content">{t('portfolio_nerang_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/Crfcpzx.jpg"
+              alt="Brisbane bazen Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_brisbane_title')}</h3>
+              <p className="section-content">{t('portfolio_brisbane_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/CrfcvJn.jpg"
+              alt="Taree terasa Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_taree_terrace_1_title')}</h3>
+              <p className="section-content">{t('portfolio_taree_terrace_1_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/CrfcUbf.jpg"
+              alt="Taree terasa Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_taree_terrace_2_title')}</h3>
+              <p className="section-content">{t('portfolio_taree_terrace_2_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/CrfcDOb.jpg"
+              alt="Taree XL balkon Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_taree_balcony_1_title')}</h3>
+              <p className="section-content">{t('portfolio_taree_balcony_1_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/Crfl9sV.jpg"
+              alt="Taree XL balkon Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_taree_balcony_2_title')}</h3>
+              <p className="section-content">{t('portfolio_taree_balcony_2_text')}</p>
+            </div>
+          </div>
+
+          <div className="portfolio-item">
+            <img
+              src="https://iili.io/Crfld0P.jpg"
+              alt="Taree XL balkon Australie"
+              className="portfolio-img"
+            />
+            <div className="portfolio-overlay">
+              <h3 className="section-subtitle">{t('portfolio_taree_balcony_3_title')}</h3>
+              <p className="section-content">{t('portfolio_taree_balcony_3_text')}</p>
+            </div>
+          </div>
         </div>
 
         <div className="home-thq-portfolio-footer-elm portfolio-footer"></div>
@@ -241,9 +373,9 @@ const Home = (props) => {
             <h2 className="section-title">{t('SectionTitle_Rmuv5H')}</h2>
 
             <div className="quote-actions">
-              <a
-                href="mailto:voflidr@gmail.com"
-                className="home-thq-btn-elm2 btn btn-accent btn-xl"
+              <div
+                className="home-thq-btn-elm2 btn btn-accent btn-xl quote-contact-button"
+                tabIndex="0"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +392,27 @@ const Home = (props) => {
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                 </svg>
                 <span className="home-text3">voflidr@gmail.com</span>
-              </a>
+              </div>
+
+              <div
+                className="home-thq-btn-elm2 btn btn-accent btn-xl quote-contact-button"
+                tabIndex="0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                >
+                  <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"></path>
+                </svg>
+                <span className="home-text3">+420 601 351 515</span>
+              </div>
             </div>
           </div>
         </div>
