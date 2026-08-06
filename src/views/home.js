@@ -5,14 +5,12 @@ import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
 import Navigation from '../components/navigation'
-import Modal from '../components/modal'
 import Footer from '../components/footer'
 import './home.css'
 
 const Home = (props) => {
   return (
     <div className="home-container1">
-      <Modal />
       <Helmet>
         <title>Bullmate Tiling</title>
         <meta property="og:title" content="Bullmate Tiling" />
@@ -20,7 +18,7 @@ const Home = (props) => {
 
       <Navigation locale={props?.locale ?? ''}></Navigation>
 
-      <section className="hero-luxury-cladding">
+      <section id="home" className="hero-luxury-cladding">
         <div className="hero-outer-wrapper">
           <div className="hero-content-region hero-text-region">
             <div className="hero-text-inner">
@@ -41,23 +39,6 @@ const Home = (props) => {
     <span>{t('text_wn6V8q')}</span>
   </button>
 
-                <div className="hero-badge">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  >
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                  </svg>
-                  <span>{t('text_Pa2a9m')}</span>
-                </div>
               </div>
             </div>
           </div>
@@ -125,6 +106,28 @@ const Home = (props) => {
                     {t('SectionContent_Fax1Qn')}
                   </span>
                 </li>
+
+                <li className="team-benefit-item">
+                  <div className="team-icon-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12l2 2l4-4"></path>
+                    </svg>
+                  </div>
+                  <span className="section-content">
+                    {t('SectionContent_price')}
+                  </span>
+                </li>
               </ul>
             </div>
 
@@ -135,7 +138,6 @@ const Home = (props) => {
                   alt="Tým při práci na luxusním obkladu"
                   className="team-work-image"
                 />
-                <div className="team-accent-box"></div>
               </div>
             </div>
           </div>
@@ -228,7 +230,7 @@ const Home = (props) => {
         <div className="quote-spotlight-wrapper">
           <div className="quote-background-image">
             <img
-              src="https://images.pexels.com/photos/19991834/pexels-photo-19991834.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+              src="https://iili.io/Cr2t6FV.jpg"
               alt="Detailní záběr na precizní obklad"
               className="quote-bg-img"
             />

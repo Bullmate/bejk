@@ -718,8 +718,8 @@
 }
  
 .btn-primary:hover:not(:disabled) {
-  border-color: color-mix(in oklab, var(--color-primary) 90%, var(--color-surface));
-  background-color: color-mix(in oklab, var(--color-primary) 90%, var(--color-surface));
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
  
 .btn-secondary:hover:not(:disabled) {
@@ -749,7 +749,7 @@
   z-index: 1000;
   position: sticky;
   transition: transform 0.3s ease;
-  border-bottom: var(--divider-value);
+  border-bottom: none;
   background-color: var(--color-surface);
 }
  
@@ -789,6 +789,10 @@
   margin: 0;
   font-size: var(--font-size-xl);
   letter-spacing: -0.04em;
+}
+
+.navigation-brand-accent {
+  color: var(--color-accent);
 }
  
 .navigation-link-list {
@@ -1066,7 +1070,7 @@
  
 .hero-luxury-cladding {
   display: flex;
-  background: var(--color-surface);
+  background: var(--color-primary);
   min-height: 100vh;
   align-items: stretch;
 }
@@ -1086,15 +1090,18 @@
  
 .hero-text-region {
   color: var(--color-on-primary);
+  flex: 0 0 45%;
   padding: var(--spacing-4xl);
   z-index: 3;
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 78% 100%, 0% 100%);
   background: var(--color-primary);
 }
  
 .hero-image-region {
+  flex: 1 1 55%;
   z-index: 1;
-  margin-left: -15%;
+  margin-left: -8%;
+  background: var(--color-primary);
 }
  
 .hero-text-inner {
@@ -1112,7 +1119,7 @@
 .hero-image-overlay {
   inset: 0;
   position: absolute;
-  background: linear-gradient(90deg, var(--color-primary) 0%, transparent 40%);
+  background: none;
   pointer-events: none;
 }
  
@@ -1304,6 +1311,7 @@
   filter: grayscale(100%) brightness(0.4);
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
  
 .quote-scrim {

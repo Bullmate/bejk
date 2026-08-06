@@ -6,6 +6,11 @@ import Script from 'dangerous-html/react'
 import './navigation.css'
 
 const Navigation = (props) => {
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault()
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="navigation-container1">
       <nav className="navigation-root">
@@ -24,19 +29,19 @@ const Navigation = (props) => {
               <li className="navigation-link-item"></li>
 
               <li className="navigation-link-item">
-                <a href="#/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
+                <a href="#/" onClick={(e) => scrollToSection(e, 'home')}>
                   <div className="navigation-link">{t('text_IJc7bV')}</div>
                 </a>
               </li>
 
               <li className="navigation-link-item">
-                <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }) }}>
+                <a href="#/" onClick={(e) => scrollToSection(e, 'about')}>
                   <div className="navigation-link">{t('text_0mNocu')}</div>
                 </a>
               </li>
 
               <li className="navigation-link-item">
-                <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }) }}>
+                <a href="#/" onClick={(e) => scrollToSection(e, 'portfolio')}>
                   <div className="navigation-link">{t('text_L9kXzU')}</div>
                 </a>
               </li>
@@ -102,13 +107,13 @@ const Navigation = (props) => {
         <div className="navigation-overlay-content">
           <ul className="navigation-mobile-links">
             <li className="navigation-mobile-item">
-              <a href="#/">
+              <a href="#/" onClick={(e) => scrollToSection(e, 'home')}>
                 <div className="navigation-mobile-link">{t('text_PV4Cmf')}</div>
               </a>
             </li>
 
             <li className="navigation-mobile-item">
-              <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }) }}>
+              <a href="#/" onClick={(e) => scrollToSection(e, 'portfolio')}>
                 <div className="navigation-mobile-link">{t('text_GNwC3L')}</div>
               </a>
             </li>
@@ -120,7 +125,7 @@ const Navigation = (props) => {
             </li>
 
             <li className="navigation-mobile-item">
-              <a href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }) }}>
+              <a href="#/" onClick={(e) => scrollToSection(e, 'about')}>
                 <div className="navigation-mobile-link">{t('text_aIsSus')}</div>
               </a>
             </li>
