@@ -10,6 +10,9 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -34,16 +37,10 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Archive Pages artifact
-        run: tar --dereference --hard-dereference --directory build -cvf "$RUNNER_TEMP/artifact.tar" .
-
       - name: Upload Pages artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-pages-artifact@v4
         with:
-          name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
-          retention-days: 1
-          if-no-files-found: error
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
