@@ -79,7 +79,7 @@ const Navigation = (props) => {
           <a href="#/">
             <div aria-label="LuxKachel Domů" className="navigation-logo-link">
               <span className="navigation-brand section-title">
-                {t('SectionTitle_jSZkTr')}
+                {t('SectionTitle_vNMad_')}
               </span>
             </div>
           </a>
@@ -108,25 +108,19 @@ const Navigation = (props) => {
           <ul className="navigation-mobile-links">
             <li className="navigation-mobile-item">
               <a href="#/" onClick={(e) => scrollToSection(e, 'home')}>
-                <div className="navigation-mobile-link">{t('text_PV4Cmf')}</div>
-              </a>
-            </li>
-
-            <li className="navigation-mobile-item">
-              <a href="#/" onClick={(e) => scrollToSection(e, 'portfolio')}>
-                <div className="navigation-mobile-link">{t('text_GNwC3L')}</div>
-              </a>
-            </li>
-
-            <li className="navigation-mobile-item">
-              <a href="#/">
-                <div className="navigation-mobile-link">{t('text_tMy8ha')}</div>
+                <div className="navigation-mobile-link">{t('text_IJc7bV')}</div>
               </a>
             </li>
 
             <li className="navigation-mobile-item">
               <a href="#/" onClick={(e) => scrollToSection(e, 'about')}>
-                <div className="navigation-mobile-link">{t('text_aIsSus')}</div>
+                <div className="navigation-mobile-link">{t('text_0mNocu')}</div>
+              </a>
+            </li>
+
+            <li className="navigation-mobile-item">
+              <a href="#/" onClick={(e) => scrollToSection(e, 'portfolio')}>
+                <div className="navigation-mobile-link">{t('text_L9kXzU')}</div>
               </a>
             </li>
           </ul>
