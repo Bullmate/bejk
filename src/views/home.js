@@ -103,7 +103,7 @@ const Home = (props) => {
                     </svg>
                   </div>
                   <span className="section-content">
-                    {t('SectionContent_Fax1Qn')}
+                    {t('SectionContent_location')}
                   </span>
                 </li>
 

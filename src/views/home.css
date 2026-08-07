@@ -7,6 +7,12 @@
 .home-thq-hero-main-image-elm {
   transform: translateX(50px);
 }
+
+@media(max-width: 991px) {
+  .home-thq-hero-main-image-elm {
+    transform: none;
+  }
+}
  
 .home-thq-team-section-elm {
   background-color: #c9a600;
