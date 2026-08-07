@@ -131,10 +131,6 @@ const Navigation = (props) => {
                 {t('text_-DwLla')}
               </div>
             </a>
-
-            <div className="navigation-contact-info">
-              <p className="section-content">{t('SectionContent_fCqSC2')}</p>
-            </div>
           </div>
         </div>
       </div>
