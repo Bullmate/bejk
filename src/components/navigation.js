@@ -17,7 +17,7 @@ const Navigation = (props) => {
         <div className="navigation-container">
           {/* GitHub Pages + HashRouter: always go home via "#/" */}
           <a href="#/">
-            <div aria-label="LuxKachel Domů" className="navigation-logo-link">
+            <div aria-label="Bullmate Tiling Domů" className="navigation-logo-link">
               <span className="navigation-brand section-title">
                 {t('SectionTitle_vNMad_')}
               </span>
@@ -77,7 +77,7 @@ const Navigation = (props) => {
       <div id="mobileOverlay" className="navigation-mobile-overlay">
         <div className="navigation-overlay-header">
           <a href="#/">
-            <div aria-label="LuxKachel Domů" className="navigation-logo-link">
+            <div aria-label="Bullmate Tiling Domů" className="navigation-logo-link">
               <span className="navigation-brand section-title">
                 {t('SectionTitle_vNMad_')}
               </span>
@@ -133,7 +133,6 @@ const Navigation = (props) => {
             </a>
 
             <div className="navigation-contact-info">
-              <p className="section-content">{t('SectionContent_9B1pho')}</p>
               <p className="section-content">{t('SectionContent_fCqSC2')}</p>
             </div>
           </div>
