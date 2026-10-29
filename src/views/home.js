@@ -559,6 +559,10 @@ section {
       </div>
 
       <Footer locale={props?.locale ?? ''}></Footer>
+      <aside className="booking-banner" aria-label="Nabídka obkladačských prací">
+        <span>Přijímáme zakázky za <strong>400 Kč/m<sup>2</sup></strong>,</span>
+        <span className="booking-banner-phone">volejte <strong>601 351 515</strong>.</span>
+      </aside>
 
     </div>
   )

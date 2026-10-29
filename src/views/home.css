@@ -2,6 +2,46 @@
   width: 100%;
   display: block;
   min-height: 100vh;
+  padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px));
+}
+
+.booking-banner {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 10px;
+  padding: 16px 20px calc(16px + env(safe-area-inset-bottom, 0px));
+  background: #c00000;
+  color: #fff;
+  border-top: 3px solid #ffcf40;
+  box-shadow: 0 -6px 24px #0003;
+  font-size: clamp(16px, 2.2vw, 23px);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.booking-banner strong {
+  font-weight: 800;
+  color: inherit;
+}
+
+.booking-banner-phone {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #ffcf40;
+  color: #171717;
+  text-decoration: none;
+}
+
+@media (max-width: 479px) {
+  .home-container1 {
+    padding-bottom: calc(150px + env(safe-area-inset-bottom, 0px));
+  }
 }
  
 .home-thq-hero-main-image-elm {
