@@ -39,9 +39,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan gh-pages
-          git rm -rf .
-          cp -a build/. .
-          git add -A
-          git commit -m "Deploy ${GITHUB_SHA}"
-          git push --force origin gh-pages
+          git fetch origin gh-pages
+          publish_dir="$RUNNER_TEMP/bejk-pages"
+          git worktree add --detach "$publish_dir" FETCH_HEAD
+          rsync -a --delete --exclude='.git' build/ "$publish_dir/"
+          git -C "$publish_dir" add -A
+          if git -C "$publish_dir" diff --cached --quiet; then
+            echo "Site is already up to date."
+            exit 0
+          fi
+          git -C "$publish_dir" commit -m "Deploy ${GITHUB_SHA}"
+          git -C "$publish_dir" push origin HEAD:gh-pages
